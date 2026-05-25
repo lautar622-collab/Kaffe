@@ -1,0 +1,17 @@
+What it basically does is take an .kff or .txt file with LML code in it, and convert it to HTML code into an .html file with a compiler made in Python
+To convert it, you use LML Launcher
+	In Kaffe Compiler file you define the Kaffe Python compiler you use, same for KSS Compiler file.
+	In Input file you define the .kff or .txt file with the LML code in it to convert it to HTML code
+	In Output file you define the .html file with the HTML code from the conversion
+Commands:
+To type plain text (<p> in HTML) you just type it. That's it
+\t to type a title (\t [title]). Equivalent to <h1> in HTML
+\b to make a button. In this version (the first version) it does absolutely nothing, it's just there (\b [text]). Equivalent to <button> in HTML
+\i to show an image. After the \i you type the source (\i [source]). Equivalent to <img> in HTML
+\l to make a hyperlink. After the \l you type the link, then a space and then what's displayed. Equivalent to <a> in HTML
+\v to make a video. After the \v you type the source.
+\a to make an audio. After the \a you type the source
+\m Defines metadata. Should be defined at the beginning of the code
+	\m encoding Defines encoding. After encoding goes a space, and then the encoding itself (\m encoding [encoding])
+	\m title Defines the title. After title goes a space, and then the title itself (\m title [title])
+	\m icon Defines the favicon. After icon goes a space, and then the icon image source (\m icon [source])
